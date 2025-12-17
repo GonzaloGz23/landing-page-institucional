@@ -124,35 +124,6 @@ Base de datos principal del sistema institucional:
 
 **Ver**: [`database/schema_reference.sql`](database/schema_reference.sql) para estructura completa
 
-## 🔧 Configuración (Para Desarrollo Local)
-
-Si deseas ejecutar este proyecto localmente para revisarlo:
-
-1. **Clonar el repositorio**
-```bash
-git clone <repo-url>
-cd newLandingPage
-```
-
-2. **Configurar base de datos**
-   - Crear dos bases de datos MySQL: `sistema_cursos` y `sistema_institucional`
-   - Importar estructura desde `database/schema_reference.sql`
-
-3. **Configurar variables de entorno**
-```bash
-cp .env.example .env
-# Editar .env con tus credenciales de base de datos
-```
-
-4. **Configurar servidor web**
-   - Usar XAMPP, LAMPP, WAMP o servidor PHP integrado
-   - Apuntar el DocumentRoot a la carpeta del proyecto
-
-5. **Acceder al sitio**
-```
-http://localhost/newLandingPage/
-```
-
 ## 💡 Características Técnicas para Destacar en Entrevistas
 
 ### 1. Solución Creativa a Limitaciones de Hosting
