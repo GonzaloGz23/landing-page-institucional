@@ -1,4 +1,4 @@
-# 🌐 Landing Page - Organismo Público
+# 🌐 Landing Page Insitucional
 
 > Sistema web de gestión de capacitaciones laborales desarrollado con PHP, MySQL y Bootstrap 5
 
