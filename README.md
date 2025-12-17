@@ -124,28 +124,6 @@ Base de datos principal del sistema institucional:
 
 **Ver**: [`database/schema_reference.sql`](database/schema_reference.sql) para estructura completa
 
-## 🎨 Capturas de Pantalla
-
-### Página Principal
-![Página Principal](docs/screenshots/home.png)
-*Vista principal con acceso a las dos áreas: CIE y CE*
-
-### Listado de Capacitaciones
-![Listado de Capacitaciones](docs/screenshots/capacitaciones.png)
-*Catálogo completo con búsqueda en tiempo real*
-
-### Detalle de Curso
-![Detalle de Curso](docs/screenshots/detalle.png)
-*Información completa del curso con módulos y cronograma*
-
-### Búsqueda Dinámica
-![Búsqueda](docs/screenshots/busqueda.png)
-*Sistema de filtrado instantáneo*
-
-### Vista Móvil
-![Vista Móvil](docs/screenshots/mobile.png)
-*Diseño responsive adaptado a dispositivos móviles*
-
 ## 🔧 Configuración (Para Desarrollo Local)
 
 Si deseas ejecutar este proyecto localmente para revisarlo:
