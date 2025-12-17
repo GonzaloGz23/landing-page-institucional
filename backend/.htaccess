@@ -1,0 +1,23 @@
+# ==============================================
+# PROTECCIÓN: Carpeta Backend
+# Bloquea acceso público a toda la carpeta
+# ==============================================
+# 
+# Implementado: 3 de octubre de 2025
+# Propósito: Proteger lógica del servidor y configuraciones de BD
+#
+# Efecto:
+# - Bloquea acceso HTTP a todos los archivos de esta carpeta
+# - Los includes desde PHP siguen funcionando normalmente
+# ==============================================
+
+# Denegar acceso a TODO por defecto
+Order Deny,Allow
+Deny from all
+
+# Mensaje de error personalizado
+ErrorDocument 403 "Acceso denegado"
+
+# NOTA IMPORTANTE:
+# Este .htaccess NO afecta los includes/requires desde PHP
+# Solo bloquea el acceso directo vía navegador/HTTP

@@ -1,0 +1,92 @@
+/* 
+ * CSS específico para la página de Preguntas Frecuentes
+ * Se carga automáticamente cuando se especifica en $page_css
+ */
+
+/* Sección de preguntas frecuentes */
+.faq-section {
+    margin-top: 2rem;
+}
+
+/* Item individual de pregunta y respuesta */
+.faq-item {
+    margin-bottom: 2.5rem;
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos para las preguntas */
+.faq-question {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos para las respuestas */
+.faq-answer {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 1rem;
+    text-align: justify;
+}
+
+/* Botón personalizado */
+.btn-primary {
+    background-color: var(--main-color);
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: var(--main-color);
+    border-color: var(--main-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-question {
+        font-size: 1.2rem;
+    }
+    
+    .faq-answer {
+        font-size: 1rem;
+        padding-left: 0.5rem;
+    }
+    
+    .faq-item {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .faq-question {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    
+    .faq-answer {
+        font-size: 0.95rem;
+        padding-left: 0;
+    }
+    
+    .btn-primary {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+}

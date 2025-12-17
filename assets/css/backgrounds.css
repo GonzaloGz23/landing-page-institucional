@@ -1,0 +1,210 @@
+/* backgrounds.css - Todos los fondos en un solo archivo */
+
+/* Páginas principales */
+body.bg-home {
+    background-image: url('../img/backgrounds/home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-quienes-somos {
+    background-image: url('../img/backgrounds/extra2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-contacto {
+    background-image: url('../img/backgrounds/extra2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-preguntas-frecuentes {
+    background-image: url('../img/backgrounds/extra2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* capacitaciones */
+body.bg-capacitaciones {
+    background-image: url('../img/backgrounds/extra2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Páginas CE */
+body.bg-ce-home {
+    background-image: url('../img/backgrounds/ce/home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body.bg-ce-prestaciones {
+    background-image: url('../img/backgrounds/ce/prestaciones.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-ce-atencion {
+    background-image: url('../img/backgrounds/ce/atencion_respuestas.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-ce-punto-emprendedor {
+    background-image: url('../img/backgrounds/ce/punto_emprendedor.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-ce-laboratorio-emprendedor {
+    background-image: url('../img/backgrounds/ce/laboratorio_emprendedor.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-ce-agencia-marketing {
+    background-image: url('../img/backgrounds/ce/agencia_marketing.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-ce-formacion-emprendedores {
+    background-image: url('../img/backgrounds/ce/formacion_emprendedores.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-ce-capital-fortalecimiento {
+    background-image: url('../img/backgrounds/ce/capital_fortalecimiento.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-ce-desarrolladora-emprendedores {
+    background-image: url('../img/backgrounds/ce/desarrolladora_emprendedores.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-ce-renovacion-comercial {
+    background-image: url('../img/backgrounds/ce/renovacion_comercial.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-ce-mercado-comunitario {
+    background-image: url('../img/backgrounds/ce/mercado_emprendedores.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-ce-conexion-comercial {
+    background-image: url('../img/backgrounds/ce/conexion_comercial.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Páginas CIE */
+body.bg-cie-home {
+    background-image: url('../img/backgrounds/cie/home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body.bg-cie-prestaciones {
+    background-image: url('../img/backgrounds/cie/prestaciones.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-cie-admision {
+    background-image: url('../img/backgrounds/cie/atencion.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-cie-mejora-continua {
+    background-image: url('../img/backgrounds/cie/mejora_continua.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-cie-insercion-formacion {
+    background-image: url('../img/backgrounds/cie/insercion_formacion.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body.bg-cie-insercion-oficios {
+    background-image: url('../img/backgrounds/cie/insercion_oficios.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-cie-oficios-formosa {
+    background-image: url('../img/backgrounds/cie/oficios_formosa.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-cie-me-formo {
+    background-image: url('../img/backgrounds/cie/me_formo_para_trabajar.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Fix para móviles: evita el parpadeo blanco durante el scroll */
+@media (max-width: 768px) {
+    body[class*="bg-"] {
+        background-attachment: scroll !important;
+        min-height: 100vh;
+    }
+}

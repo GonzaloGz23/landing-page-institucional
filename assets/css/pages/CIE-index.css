@@ -1,0 +1,98 @@
+/* Imagen del logo CE */
+.cie-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 0 2rem 0;
+}
+
+/* Texto de párrafos CE */
+.cie-main-text{
+    font-size: 2.7vh;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-weight: 401;
+}
+
+/* Botón ver todas las prestaciones */
+.btn-cie-allservices {
+    background-color: var(--main-color);
+    border: 3px solid white;
+    border-radius: 15px;
+    /* padding: 15px 40px; */
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-cie-allservices:hover {
+    background-color: var(--main-color);
+    border-color: white;
+    color: var(--text-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Responsive para imagen CE */
+@media (max-width: 992px) {
+    .cie-img {
+        max-width: 450px;
+        margin-bottom: 1.8rem;
+    }
+    
+    .cie-main-text {
+        font-size: 2.5vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .cie-img {
+        max-width: 350px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .cie-main-text {
+        font-size: 2.3vh;
+    }
+    
+    .btn-cie-allservices {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .cie-img {
+        max-width: 280px;
+        margin-bottom: 1.2rem;
+    }
+    
+    .cie-main-text {
+        font-size: 2.1vh;
+        line-height: 1.5;
+    }
+    
+    .btn-cie-allservices {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .cie-img {
+        max-width: 240px;
+        margin-bottom: 1rem;
+    }
+    
+    .cie-main-text {
+        font-size: 1.9vh;
+    }
+    
+    .btn-cie-allservices {
+        padding: 8px 20px;
+        font-size: 0.85rem;
+    }
+}

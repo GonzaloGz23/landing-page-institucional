@@ -1,0 +1,136 @@
+/* 
+ * CSS específico para la página de renovación comercial CE
+ * Se carga automáticamente cuando se especifica en $page_css
+ */
+
+/* Estilos específicos para la página de renovación comercial CE */
+
+/* Imagen principal del programa */
+.renovacion-comercial-main-img {
+    width: 100%;
+    max-width: 455px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+}
+
+/* Sección del cuerpo de texto */
+.content-section {
+    margin: 1rem 0 3rem 0;
+    /* Reducido margen superior */
+    padding: 0 1rem;
+}
+
+.content-text {
+    font-size: 1.3rem;
+    font-weight: 401;
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+/* Lista de contenido */
+.content-list {
+    font-size: 1.3rem;
+    font-weight: 401;
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: justify;
+    margin-bottom: 2rem;
+    padding-left: 2.5rem;
+}
+
+.content-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Contenedor del botón centrado */
+.button-container {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Responsive para imagen principal */
+@media (max-width: 992px) {
+    .renovacion-comercial-main-img {
+        max-width: 421px;
+        margin: 0;
+    }
+
+    .content-text {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    
+    .content-list {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .renovacion-comercial-main-img {
+        max-width: 341px;
+        margin: 0;
+    }
+
+    .content-section {
+        margin: 0.5rem 0 2rem 0;
+        /* Ajustado margen */
+    }
+
+    .content-text {
+        font-size: 1.1rem;
+        text-align: left;
+        padding: 0 0.5rem;
+    }
+    
+    .content-list {
+        font-size: 1.1rem;
+        text-align: left;
+        padding-left: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .renovacion-comercial-main-img {
+        max-width: 273px;
+        margin: 0;
+    }
+
+    .content-section {
+        padding: 0 0.5rem;
+        margin: 0.3rem 0 2rem 0;
+        /* Ajustado margen */
+    }
+
+    .content-text {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    
+    .content-list {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding-left: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .renovacion-comercial-main-img {
+        max-width: 228px;
+        margin: 0;
+    }
+
+    .content-text {
+        font-size: 0.95rem;
+    }
+    
+    .content-list {
+        font-size: 0.95rem;
+        padding-left: 1.3rem;
+    }
+}

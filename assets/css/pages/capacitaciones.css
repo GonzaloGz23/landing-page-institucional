@@ -1,0 +1,159 @@
+/* ============================================
+   CAPACITACIONES.CSS
+   Estilos para la página de capacitaciones
+   ============================================ */
+
+/* ============================================
+   1. CONFIGURACIÓN GENERAL
+   ============================================ */
+
+/* NOTA: El background se define en backgrounds.css */
+
+/* ============================================
+   2. SECCIÓN DESTACADAS
+   ============================================ */
+
+.capacitaciones-destacadas-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 3rem 0;
+    border-radius: 15px;
+}
+
+.capacitaciones-destacadas-title {
+    color: var(--text-color) !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Grid de destacadas - las cards se centran automáticamente */
+.capacitaciones-destacadas-grid {
+    justify-content: center;
+}
+
+/* ============================================
+   3. SECCIÓN BUSCADOR
+   ============================================ */
+
+.capacitaciones-buscador-card {
+    border: none;
+    border-radius: 12px;
+    background: transparent !important;
+}
+
+.capacitaciones-buscador-input-col {
+    background-color: transparent !important;
+}
+
+.capacitaciones-buscador-input-group {
+    border: 3px solid white !important;
+    border-radius: 12px !important;
+    background: #703760 !important;
+    background: linear-gradient(279deg, rgba(112, 55, 96, 1) 0%, rgba(57, 107, 145, 1) 59%) !important;
+    overflow: hidden !important;
+}
+
+.capacitaciones-buscador-icon {
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+}
+
+.capacitaciones-buscador-input {
+    border: none !important;
+    border-radius: 0 !important;
+    font-size: 1rem !important;
+    padding: 0.75rem 1rem !important;
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+}
+
+.capacitaciones-buscador-input::placeholder {
+    color: rgba(253, 253, 253, 0.6) !important;
+}
+
+.capacitaciones-buscador-contador-text {
+    color: var(--text-color) !important;
+}
+
+/* ============================================
+   4. SECCIÓN LISTA DE CAPACITACIONES
+   ============================================ */
+
+.capacitaciones-lista-title {
+    color: var(--text-color) !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center !important;
+}
+
+.capacitaciones-lista-container {
+    min-height: 400px;
+    position: relative;
+}
+
+.capacitaciones-lista-empty,
+.capacitaciones-lista-no-resultados {
+    background: var(--main-color);
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+    max-width: 600px;
+}
+
+/* ============================================
+   5. RESPONSIVE DESIGN
+   ============================================ */
+
+/* Desktop */
+@media (min-width: 992px) {
+    .capacitaciones-buscador-input-col {
+        width: 80%;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    /* El grid se ajusta automáticamente con las clases de Bootstrap */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .capacitaciones-destacadas-section {
+        padding: 2rem 0;
+    }
+    
+    .capacitaciones-buscador-row {
+        flex-direction: column;
+    }
+    
+    .capacitaciones-buscador-input-col {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .capacitaciones-buscador-input-group {
+        margin-bottom: 0;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 576px) {
+    .capacitaciones-destacadas-title,
+    .capacitaciones-lista-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* ============================================
+   6. ACCESIBILIDAD
+   ============================================ */
+
+/* Removido - No hay estados focus */

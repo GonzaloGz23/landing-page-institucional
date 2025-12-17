@@ -1,0 +1,17 @@
+# ==============================================
+# PROTECCIÓN: Archivos de Configuración
+# Bloquea acceso público a configuraciones
+# ==============================================
+#
+# Implementado: 3 de octubre de 2025
+# Propósito: Proteger configuraciones sensibles (WhatsApp, rutas, etc.)
+#
+# Archivos protegidos:
+# - whatsapp_config.php (números de contacto, mensajes)
+# - page_config.php (configuración de navegación)
+# ==============================================
+
+Order Deny,Allow
+Deny from all
+
+ErrorDocument 403 "Acceso denegado a archivos de configuración"

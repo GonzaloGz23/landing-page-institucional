@@ -1,0 +1,233 @@
+/**
+ * Estilos para el Formulario de Inscripción
+ * Mejora la presentación visual y UX del formulario
+ */
+
+/* Card del formulario */
+.inscripcion-form-container .card {
+    border-radius: 10px;
+    background-color: var(--main-color) !important;
+    border: 3px solid white;
+}
+
+/* Card header */
+.inscripcion-form-container .card-header {
+    background-color: var(--tertiary-color) !important;
+    color: var(--text-color);
+}
+
+/* Secciones del formulario */
+.inscripcion-form-container h5 {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.inscripcion-form-container h5 i {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Input groups */
+.inscripcion-form-container .input-group-text {
+    background-color: var(--main-color) !important;
+    border-right: none;
+    color: var(--text-color);
+    transition: none !important;
+}
+
+.inscripcion-form-container .form-control,
+.inscripcion-form-container .form-select {
+    border-left: none;
+    background-color: var(--main-color) !important;
+    color: var(--text-color);
+    transition: none !important;
+}
+
+.inscripcion-form-container .input-group:focus-within .input-group-text {
+    border-color: var(--tertiary-color);
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+}
+
+.inscripcion-form-container .input-group:focus-within .form-control,
+.inscripcion-form-container .input-group:focus-within .form-select {
+    border-color: var(--tertiary-color);
+}
+
+/* Labels */
+.inscripcion-form-container .form-label {
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.inscripcion-form-container .form-label .text-danger {
+    color: var(--text-color) !important;
+}
+
+/* Iconos de Bootstrap */
+.inscripcion-form-container .bi {
+    color: var(--text-color);
+}
+
+/* Validación */
+.inscripcion-form-container .was-validated .form-control:valid,
+.inscripcion-form-container .was-validated .form-select:valid {
+    border-color: #198754;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+}
+
+.inscripcion-form-container .was-validated .form-control:invalid,
+.inscripcion-form-container .was-validated .form-select:invalid {
+    border-color: #dc3545;
+}
+
+/* Validación - Aplicar colores al input-group-text (icono) también */
+.inscripcion-form-container .was-validated .input-group:has(.form-control:valid) .input-group-text,
+.inscripcion-form-container .was-validated .input-group:has(.form-select:valid) .input-group-text {
+    border-color: #198754 !important;
+    background-color: #198754 !important;
+}
+
+.inscripcion-form-container .was-validated .input-group:has(.form-control:invalid) .input-group-text,
+.inscripcion-form-container .was-validated .input-group:has(.form-select:invalid) .input-group-text {
+    border-color: #dc3545 !important;
+    background-color: #dc3545 !important;
+}
+
+/* Alerts */
+.inscripcion-form-container .alert {
+    border-radius: 8px;
+}
+
+/* Botones */
+.inscripcion-form-container .btn-success {
+    background-color: var(--tertiary-color);
+    border: 2px solid white;
+    border-radius: 15px;
+    color: var(--text-color);
+    font-weight: 700;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+}
+
+.inscripcion-form-container .btn-success:hover {
+    background-color: #6a1f44;
+    border: 2px solid white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inscripcion-form-container .btn-outline-secondary {
+    border-radius: 8px;
+}
+
+/* Small text */
+.inscripcion-form-container .form-text {
+    font-size: 0.85rem;
+    color: var(--text-color);
+}
+
+/* Textos generales */
+.inscripcion-form-container h1,
+.inscripcion-form-container h4,
+.inscripcion-form-container p,
+.inscripcion-form-container li,
+.inscripcion-form-container strong {
+    color: var(--text-color);
+}
+
+/* Enlace de volver */
+.inscripcion-form-container .volver-link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.inscripcion-form-container .volver-link:hover {
+    opacity: 0.8;
+    color: var(--text-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .inscripcion-form-container .col-md-6,
+    .inscripcion-form-container .col-md-4 {
+        margin-bottom: 1rem;
+    }
+    
+    .inscripcion-form-container h5 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Animación de carga */
+.inscripcion-form-container.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Mejora visual para selects */
+.inscripcion-form-container select.form-select {
+    cursor: pointer;
+}
+
+/* Iconos de calendario (date input) y select dropdown */
+.inscripcion-form-container input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(29%) sepia(89%) saturate(1000%) hue-rotate(310deg) brightness(70%) contrast(90%);
+    cursor: pointer;
+}
+
+.inscripcion-form-container select.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%237e2752' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.inscripcion-form-container select.form-select option {
+    padding: 8px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.inscripcion-form-container select.form-select option:hover {
+    background-color: var(--tertiary-color) !important;
+    color: var(--text-color);
+}
+
+.inscripcion-form-container select.form-select option:checked {
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+}
+
+/* Border radius para inputs dentro de input-group */
+.inscripcion-form-container .input-group .form-control:first-child,
+.inscripcion-form-container .input-group .form-select:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Placeholder */
+.inscripcion-form-container ::placeholder {
+    color: rgba(253, 253, 253, 0.5) !important;
+    opacity: 1 !important;
+}
+
+/* Invalid feedback */
+.inscripcion-form-container .invalid-feedback {
+    color: var(--text-color);
+}
+
+/* Focus states mejorados */
+.inscripcion-form-container .form-control:focus,
+.inscripcion-form-container .form-select:focus {
+    border-color: var(--tertiary-color);
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.inscripcion-form-container .form-control:active,
+.inscripcion-form-container .form-select:active {
+    border-color: var(--tertiary-color);
+    background-color: var(--main-color) !important;
+    box-shadow: none !important;
+}
+

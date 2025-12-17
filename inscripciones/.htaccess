@@ -1,0 +1,36 @@
+# ==============================================
+# PROTECCIÓN: Carpeta Inscripciones
+# ==============================================
+#
+# Implementado: 3 de octubre de 2025
+# Estado: ✅ ACTIVO - Archivos públicos permitidos
+# 
+# IMPORTANTE: Solo archivos específicos son accesibles.
+# El resto permanece bloqueado por seguridad.
+# ==============================================
+
+Order Deny,Allow
+Deny from all
+
+# ============================================
+# ARCHIVOS PÚBLICOS PERMITIDOS
+# ============================================
+
+# Permitir acceso a detalle de capacitación
+<Files "detalleCapacitacion.php">
+    Allow from all
+</Files>
+
+# Permitir acceso a formulario de inscripción
+<Files "inscripcion.php">
+    Allow from all
+</Files>
+
+# Permitir acceso a validación AJAX de DNI
+<Files "validar_dni.php">
+    Allow from all
+</Files>
+
+# Resto de archivos (procesadores, validaciones) 
+# permanecen bloqueados para mayor seguridad
+# ============================================

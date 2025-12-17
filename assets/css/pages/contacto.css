@@ -1,0 +1,112 @@
+/* 
+ * CSS específico para la página de Contacto
+ * Se carga automáticamente cuando se especifica en $page_css
+ */
+
+/* Texto de contacto */
+.contact-text {
+    font-size: 1.3rem;
+    font-weight: 401;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+/* Números de teléfono */
+.phone-numbers {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+/* Container de oficinas */
+.offices-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Cards de oficinas */
+.office-card {
+    background-color: var(--main-color);
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    max-width: 450px;
+    min-width: 320px;
+}
+
+.office-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto de dirección de oficinas */
+.office-address {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.office-address strong {
+    font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .offices-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .office-card {
+        max-width: 100%;
+        min-width: auto;
+        width: 100%;
+        padding: 1rem 1.2rem;
+    }
+    
+    .contact-text {
+        font-size: 1.2rem;
+    }
+    
+    .phone-numbers {
+        font-size: 1.3rem;
+    }
+    
+    .office-address {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-text {
+        font-size: 1.1rem;
+    }
+    
+    .phone-numbers {
+        font-size: 1.2rem;
+    }
+    
+    .office-card {
+        padding: 1rem;
+    }
+    
+    .office-address {
+        font-size: 1rem;
+    }
+}

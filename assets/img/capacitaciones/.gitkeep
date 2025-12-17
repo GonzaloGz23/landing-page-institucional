@@ -1,0 +1,9 @@
+# Carpeta de imágenes de capacitaciones
+
+Esta carpeta contiene las imágenes de las capacitaciones.
+
+## Imagen por defecto
+- **sin_imagen.webp**: Imagen que se muestra cuando un curso no tiene imagen asignada
+
+## Estructura
+Las imágenes deben guardarse directamente en esta carpeta con el nombre almacenado en la BD (campo `ruta_imagen` de la tabla `capacitaciones`)
